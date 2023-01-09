@@ -1,0 +1,9 @@
+near call <> init '{"owner_id": "nqdinh1203.testnet", "prefix": "owner"}' --accountId <>
+
+near view <> get_token_by_id '{"token_id": 1}'
+
+near view <> get_supply_tokens
+
+near view <> get_all_tokens
+
+near call <> mint_nft '{"token_owner_id": "quangdinh1203.testnet", "name": "vugomars #2", "description": "this is my image for my course", "media_uri": "https://static.toiimg.com/thumb/msid-58475411,width-748,height-499,resizemode=4,imgsize-142947/.jpg", "level": 2}' --accountId <>
